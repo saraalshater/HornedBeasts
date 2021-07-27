@@ -15,7 +15,7 @@
         "always"
       ],
       "indent": [
-        "error",
+        "warn",
         2
       ],
       "new-cap": "warn",
