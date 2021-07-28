@@ -1,22 +1,22 @@
 import React from 'react';
 import HornedBeasts from './HornedBeasts';
-import Data from 'data.json';
+import Data from '../data.json';
 
 
 class Main extends React.Component {
 
-    constructer(props) {
+    constructor(props) {
         super(props);
         this.state = {
             hornedData: Data,
-        }
+        };
     }
 
 
     render() {
         return (
 
-            this.state.Data.map(element => {
+            this.state.hornedData.map(element => {
                 return (
 
                     <HornedBeasts
@@ -25,10 +25,10 @@ class Main extends React.Component {
                         description={element.description}
                     />
 
-                )
+                );
             })
         
-        )
+        );
     }
 }
 

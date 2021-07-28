@@ -5,17 +5,17 @@ import Card from 'react-bootstrap/Card';
 
 class HornedBeasts extends React.Component {
 
-constructer(props){
+constructor(props){
     super(props);
     this.state = {
         numberOfLikes : 0
-    }
+    };
 }
 
 likesCounter = () =>{
     this.setState ({
         numberOfLikes : this.state.numberOfLikes + 1
-    })
+    });
 
 }
 
@@ -23,12 +23,12 @@ likesCounter = () =>{
         return (
             <>
                 <div>
-                    <h2>{this.props.title}</h2>
+                    {/* <h2>{this.props.title}</h2>
                     <img src={this.props.imgUrl} alt={this.props.title} title={this.props.title} ></img>
-                    <p>{this.props.description}</p>
+                    <p>{this.props.description}</p> */}
 
 
-                    <Card style={{ width: '18rem' }}>
+                    <Card style={{ width: '18rem' }}  id="card" >
                         <Card.Img onClick={this.likesCounter} variant="top" src={this.props.imgUrl} />
                         <Card.Body>
                             <Card.Title>{this.props.title}</Card.Title>
