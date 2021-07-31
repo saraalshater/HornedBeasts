@@ -17,7 +17,7 @@ class Main extends React.Component {
     render() {
         return (
 
-            this.state.data.map(element => {
+            this.props.data.map(element => {
                 return (
 
                     <HornedBeasts
