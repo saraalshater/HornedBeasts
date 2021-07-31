@@ -31,7 +31,6 @@ class HornedBeasts extends React.Component {
                     <img src={this.props.imgUrl} alt={this.props.title} title={this.props.title} ></img>
                     <p>{this.props.description}</p> */}
 
-
                     <Card style={{ width: '18rem' }} id="card" onClick={this.getTheData} >
                         <Card.Img onClick={this.likesCounter} variant="top" src={this.props.imgUrl} alt={this.props.title} />
                         <Card.Body>
@@ -43,7 +42,7 @@ class HornedBeasts extends React.Component {
                             {/* <Button variant="primary">i am you favorite </Button> */}
                         </Card.Body>
                     </Card>
-
+                    
                 </div>
             </>
         );
